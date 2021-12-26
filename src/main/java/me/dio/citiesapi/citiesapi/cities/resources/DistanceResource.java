@@ -35,11 +35,11 @@ public class DistanceResource {
         return service.distanceByCubeInMeters(city1, city2);
     }
 
-    @GetMapping("/by-math")
+    /*@GetMapping("/by-math")
     public Double byMath(@RequestParam(name = "from") final Long city1,
                          @RequestParam(name = "to") final Long city2,
                          @RequestParam final EarthRadius unit) {
         log.info("byMath, from={}, to={}", city1, city2);
         return service.distanceUsingMath(city1, city2, unit);
-    }
+    }*/
 }

@@ -37,7 +37,7 @@ public class DistanceService {
      * @param unit EarthRadius
      * @return Double
      */
-    public Double distanceUsingMath(final Long city1, final Long city2, final EarthRadius unit) {
+    /*public Double distanceUsingMath(final Long city1, final Long city2, final EarthRadius unit) {
         log.info("distanceUsingMath({}, {}, {})", city1, city2, unit);
         final List<City> cities = cityRepository.findAllById((Arrays.asList(city1, city2)));
 
@@ -45,7 +45,7 @@ public class DistanceService {
         final Double[] location2 = StringLocationUtils.transform(cities.get(1).getGeolocation());
 
         return doCalculation(location1[0], location1[1], location2[0], location2[1], unit);
-    }
+    }*/
 
     /**
      * 2nd option
